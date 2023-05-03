@@ -4,11 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predev": "node typeReader.js",
-    "dev": "pnpm run types && vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "types": "node typeReader.js",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,7 +21,6 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
-    "glob": "^10.2.2",
     "vite": "^4.3.2"
   }
 }

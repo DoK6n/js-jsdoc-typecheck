@@ -1,5 +1,3 @@
-//@ts-check
-
 /** @type {Account.User} */
 const user = { id: 'u1', age: 35, name: 'Jone Doe', posts: ['p1'] };
 
