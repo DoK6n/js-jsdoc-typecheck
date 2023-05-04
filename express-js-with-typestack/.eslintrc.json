@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["plugin:prettier/recommended"],
+  "parser": "babel-eslint", // https://github.com/eslint/eslint/issues/13502
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "constructor-super": "error",
+    "quotes": ["error", "single"],
+    "no-var": "error",
+    "semi": ["error", "always"]
+  }
+}

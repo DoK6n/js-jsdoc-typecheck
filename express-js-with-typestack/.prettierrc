@@ -1,0 +1,9 @@
+{
+  "singleQuote": true,
+  "arrowParens": "avoid",
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "proseWrap": "always",
+  "endOfLine": "lf",
+  "printWidth": 100
+}
