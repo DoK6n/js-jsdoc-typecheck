@@ -2,11 +2,12 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "commonJS",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "checkJs": true,
+    "checkJs": false,
     "baseUrl": ".",
-    "outDir": "dist/"
+    "outDir": "dist/",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "includes": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

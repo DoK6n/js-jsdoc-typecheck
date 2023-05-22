@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import { getMetadataArgsStorage, useContainer, useExpressServer } from 'routing-controllers';
 import { routingControllersToSpec } from 'routing-controllers-openapi';
 import * as swaggerUiExpress from 'swagger-ui-express';
-// import Container from 'typedi';
+import Container from 'typedi';
 
 export class Server {
   #PORT;
@@ -22,7 +22,7 @@ export class Server {
       controllers: [__dirname + '/**/*.controller{.ts,.js}'],
       // middlewares: [__dirname + '/common/middlewares/**/*{.ts,.js}'],
     };
-    // useContainer(Container);
+    useContainer(Container);
     useExpressServer(this.app, this.#routingControllersOptions);
     this.#setMiddlewares();
   }

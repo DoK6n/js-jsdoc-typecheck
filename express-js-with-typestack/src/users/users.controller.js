@@ -1,17 +1,17 @@
 import { Get, JsonController } from 'routing-controllers';
 import { OpenAPI } from 'routing-controllers-openapi';
-// import { UsersService } from './users.service';
-// import Container, { Inject, Service } from 'typedi';
+import { UsersService } from './users.service';
+import Container, { Inject, Service } from 'typedi';
 import { users } from '../db/data';
 
 @JsonController('/users')
-// @Service()
+@Service()
 export class UserController {
-  // #usersService;
+  #usersService;
 
-  // constructor(/** @type {UsersService} */ @Inject() usersService) {
-  //   this.#usersService = usersService;
-  // }
+  constructor(/** @type {UsersService} */ @Inject() usersService) {
+    this.#usersService = usersService;
+  }
 
   @Get('/')
   @OpenAPI({
