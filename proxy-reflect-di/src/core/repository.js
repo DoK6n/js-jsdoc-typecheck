@@ -12,7 +12,8 @@ class Repository {
   }
 
   async create({ data }) {
-    return this.#database.push(data);
+    this.#database.push(data);
+    return this.#database;
   }
 
   async findUnique({ where: { id } }) {
